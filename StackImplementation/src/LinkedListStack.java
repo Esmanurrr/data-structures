@@ -2,7 +2,7 @@
 public class LinkedListStack<Type> implements Stack<Type> {
 	protected Node<Type> top;
 	
-	public LinkedListStack(Node<Type> top) {
+	public LinkedListStack() {
 		this.top=null;
 	}
 	
