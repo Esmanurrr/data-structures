@@ -2,20 +2,20 @@
 public class LinkedListStack<Type> implements Stack<Type> {
 	protected Node<Type> top;
 	
-	public LinkedListStack() {
+	public LinkedListStack() {//consturaction
 		this.top=null;
 	}
 	
-	public boolean isEmpty() {
+	public boolean isEmpty() {//at first stack is empty
 		return top == null;
 	}
 	
-	public void push(Type item) {
+	public void push(Type item) {//add node
 		Node<Type> newNode = new Node<>(item, top);
 		top = newNode;
 	}
 	
-	public Type pop() {
+	public Type pop() {//delete node
 		if(top == null) 
 			return null;
 		
@@ -26,7 +26,7 @@ public class LinkedListStack<Type> implements Stack<Type> {
 		
 	}
 	
-	public Type top() {
+	public Type top() {//update top
 		if(top==null)
 			return null;
 		return top.data;
