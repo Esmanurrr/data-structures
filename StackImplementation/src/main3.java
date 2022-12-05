@@ -14,7 +14,7 @@ public class main3 {
 				myStack.push(ch);
 				myStack.show();
 				break;
-			case ')': //we should 
+			case ')': //we should to add postfix the each char that in stack
 				while(infix.charAt(i) != '(') {
 					postfix = postfix + (myStack.top());
 					myStack.pop();
